@@ -23,7 +23,7 @@ export ANSIBLE_HOST_KEY_CHECKING=False
 
 ## Check connectivity
 
-ansible <hostname> -m ping --ask-pass -u <username>
+ansible <hostname_> -m ping --ask-pass -u <_username_>
 
 ## To execute command remotely
 
