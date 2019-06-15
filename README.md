@@ -23,32 +23,32 @@ export ANSIBLE_HOST_KEY_CHECKING=False
 
 ## Check connectivity
 
-ansible <hostname_> -m ping --ask-pass -u <_username_>
+ansible <_hostname_> -m ping --ask-pass -u <_username_>
 
 ## To execute command remotely
 
-ansible -m shell -a 'free -m' apache  --ask-pass -u <username>
+ansible -m shell -a 'free -m' apache  --ask-pass -u <_username_>
 
 ## To execute Ansible Playbook
 
 ansible-playbook <file_name.yml>
 
 
-ansible-playbook <file_name.yml> -vvvvv  --ask-pass -u <username>
+ansible-playbook <file_name.yml> -vvvvv  --ask-pass -u <_username_>
 
 or
 
-ansible-playbook <file_name.yml> -vvvvv --ask-pass -u <username>  -bK 
+ansible-playbook <file_name.yml> -vvvvv --ask-pass -u <_username_>  -bK 
 
 
 ## Deploy Azure VM
 
 sudo ansible-playbook AzureVM.yml
 
-Install Tomcat
+## Install Tomcat
 
-sudo ansible-playbook tomcat.yml  --ask-pass -u <username>
+sudo ansible-playbook tomcat.yml  --ask-pass -u <_username_>
 
-Install MySQL
+## Install MySQL
 
-sudo ansible-playbook mysql.yml  --ask-pass -u <username>
+sudo ansible-playbook mysql.yml  --ask-pass -u <_username_>
